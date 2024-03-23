@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.Activity_QuanLySanPham">
+
+    <TextView
+        android:id="@+id/txtmota22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Quản lý sản phẩm"
+        android:textSize="35dp"
+        android:textColor="@color/BlueDam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTenGiay"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmota22"
+        android:hint="Tên giày"/>
+
+    <EditText
+        android:id="@+id/txtGiaBan"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Giá bán"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTenGiay" />
+
+    <EditText
+        android:id="@+id/txtMoTa"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Mô tả"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGiaBan" />
+
+    <EditText
+        android:id="@+id/txtNhaSanXuat"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nhà sản xuất"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMoTa" />
+
+    <EditText
+        android:id="@+id/txtSoLuong"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Số lượng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNhaSanXuat" />
+
+    <EditText
+        android:id="@+id/txtMauSac"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Màu sắc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoLuong" />
+
+    <EditText
+        android:id="@+id/txtSize"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Size giày"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMauSac" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSize">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/aaaaa"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Select Item"
+            android:editable="false"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSoLuong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/txtMoTa"
+        app:layout_constraintTop_toBottomOf="@+id/txtmota22"
+        app:layout_constraintVertical_bias="0.141"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnHinhAnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm hình ảnh"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMauSac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toEndOf="@+id/txtNhaSanXuat"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.074"/>
+
+    <Button
+        android:id="@+id/btnXacNhanThemSP"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <EditText
+        android:id="@+id/txtgioitinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="388dp"
+        android:ems="10"
+        android:hint="Giới tính"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtMauSac" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

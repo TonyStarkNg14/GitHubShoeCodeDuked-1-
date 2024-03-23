@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Activity.Activity_QLHSX">
+
+    <TextView
+        android:id="@+id/textView444"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Quản lý nhà sản xuất"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/txtHSX"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nhập mã nhà sản xuất" />
+    <EditText
+        android:id="@+id/txtHSX1"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nhập tên nhà sản xuất" />
+    <EditText
+        android:id="@+id/txtHSX2"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nhập địa chỉ nhà sản xuất" />
+    <EditText
+        android:id="@+id/txtHSX3"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nhập điện thoại nhà sản xuất" />
+    <Button
+        android:id="@+id/btnXacNhanHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Xác nhận" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
